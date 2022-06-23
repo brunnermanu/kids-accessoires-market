@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$dark: #000000;
+$medium-dark: #2a2a2a;
+$medium: #dcdcdc;
+$light: #f6f6f6;
+$extra-light: #ffffff;
+$green: #60bfa4;
+$purple: #8a23ff;
+$border-dark: rgba($dark, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}
+
+$heading-map: (
+  h1: (
+    font-family: Poppins,
+    font-size: 30px,
+    color: $purple,
+    font-weight: 700,
+  ),
+  h2: (
+    font-family: Poppins,
+    font-size: 20px,
+    color: $purple,
+    font-weight: 600,
+  )
+);
+
+
+
+
