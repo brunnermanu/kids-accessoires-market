@@ -1,0 +1,12 @@
+@use "sass:map";
+@import "src/styles/variables";
+
+@function get-heading($keys...) {
+  @return map-get($heading-map, $keys...);
+}
+
+@mixin headings($keys...) {
+  @each $key, $value in get-heading($keys...) {
+    #{$key}: #{$value}
+  }
+}
